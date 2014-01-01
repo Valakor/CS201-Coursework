@@ -1,9 +1,29 @@
-team21 README
+SimCity201 README
 ======
 
-SimCity201 Project Repository for Team 21
+Project repository for the SimCity201 project completed by Matthew Pohlmann, Brandon Barber, Ben Doherty, and Skyler Lloyd for the final project of CSCI 201 - Principles of Software Development. The total line count is 40,000+ lines of code completed over the course of 7 weeks.
 
-##V.2 Submission
+##Final Submission
+
+###Compiling and Running the Code
+####Instructions
+To compile and run SimCity201:
+  + Clone the repository into a folder
+  + In Eclipse, File -> New -> Java Project
+  + Uncheck `Use default location`
+  + Click `Browse` and select the folder you downloaded the repository to
+  + Ensure that `Java SE 7` is selected under JRE
+  + Click `Finish`
+  + Eclipse will give some errors from the JUnit testing section because JUnit4 is not included in the build path
+  + With the current project open, Project -> Properties -> Libraries -> Add Library...
+  + Select `JUnit`
+  + Click `Next`
+  + Under `JUnit library version` select `JUnit 4`
+  + Click `Finish`
+  + Open `src.cs201.Main.java`
+  + Click `Run` to build and run SimCity201
+  + Click `Show Scenario Panel` and choose a scenario to run
+
 ###Work Load
  + **Matthew Pohlmann:**
    + PersonAgent
@@ -61,14 +81,6 @@ SimCity201 Project Repository for Team 21
      + Residence Config Panel (Doesn't exist)
      + Apartment Complex Config Panel (Doesn't exist)
      + Unit Testing of Above Code
- + **James Lynch:**
-   + Bank (Does not exist)
-     + Bank Structure (and Gui)
-     + Bank Customer Role (and Gui)
-     + Bank Guard Role (and Gui)
-     + Bank Teller Role (and Gui)
-     + Bank Config Panel (Doesn't exist)
-     + Unit Testing of Above Code (Broken and removed)
 
 ###Things That Don't Work
  + No File I/O for configuration
@@ -78,22 +90,3 @@ SimCity201 Project Repository for Team 21
  + Animation in the CityView is extremely slow and buggy because Java can't handle so many draw calls
  + Some large scenarios don't work because we simply did not have the time or resources to integrate everything with only 4 people
  + Skyler's restaurant is incomplete (shifts don't quite work, no rotating stand, no cook animation)
-
-###Running Some Scenarios (Things That Do Work)
-####Instructions
-To compile and run SimCity201 V1:
-  + Clone the most recent tag (should be V2.X) into a folder
-  + In Eclipse, File -> New -> Java Project
-  + Uncheck `Use default location`
-  + Click `Browse` and select the repository you downloaded
-  + Ensure that `Java SE 7` is selected under JRE
-  + Click `Finish`
-  + Eclipse will give some errors from the JUnit testing section because JUnit4 is not included in the build path
-  + With the current project open, Project -> Properties -> Libraries -> Add Library...
-  + Select `JUnit`
-  + Click `Next`
-  + Under `JUnit library version` select `JUnit 4`
-  + Click `Finish`
-  + Open `src.cs201.Main.java`
-  + Click `Run` to build and run SimCity201 V1
-  + Click `Show Scenario Panel` and choose a scenario to run
